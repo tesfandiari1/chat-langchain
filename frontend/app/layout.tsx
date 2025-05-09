@@ -6,8 +6,18 @@ import { NuqsAdapter } from "nuqs/adapters/next/app";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chat LangChain",
-  description: "Chatbot for LangChain",
+  title: "UniWise Agent",
+  description: "Agent for UniWise",
+  openGraph: {
+    images: [
+      {
+        url: "/images/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "Uniwise Open Graph Image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

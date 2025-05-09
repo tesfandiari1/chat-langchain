@@ -68,6 +68,7 @@ RECORD_MANAGER_DB_URL=
 WEAVIATE_API_KEY=
 WEAVIATE_INDEX_NAME=langchain
 WEAVIATE_URL=
+ANTHROPIC_API_KEY=
 ```
 
 These should be the same secrets as were added to Vercel.
