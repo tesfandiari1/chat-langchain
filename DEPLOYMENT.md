@@ -20,7 +20,7 @@ The final Weaviate environment variable is "WEAVIATE_INDEX_NAME". This is the na
 
 After this your vector store will be setup. We can now move onto the record manager.
 
-## Supabase (Record Manager)
+## Supabase (Record Manager) 
 
 Visit Supabase to create an account [here](https://supabase.com/dashboard).
 
