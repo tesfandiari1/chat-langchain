@@ -2,13 +2,14 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import {
-  AppendMessage,
   AssistantRuntimeProvider,
   useExternalStoreRuntime,
+  type AppendMessage,
 } from "@assistant-ui/react";
 import { v4 as uuidv4 } from "uuid";
 import { useExternalMessageConverter } from "@assistant-ui/react";
-import { BaseMessage, HumanMessage } from "@langchain/core/messages";
+import type { BaseMessage } from "@langchain/core/messages";
+import { HumanMessage } from "@langchain/core/messages";
 import { useToast } from "../hooks/use-toast";
 import {
   convertToOpenAIFormat,
@@ -55,7 +56,7 @@ function ChatLangChainComponent(): React.ReactElement {
       console.error("Failed to fetch thread in query param", e);
       setThreadId(null);
     }
-  }, [threadId]);
+  }, [threadId, getThreadById, setThreadId, switchSelectedThread]);
 
   const isSubmitDisabled = !userId;
 
